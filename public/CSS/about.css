@@ -1,0 +1,151 @@
+/* OUR STORY RELATED CSS  */
+.our-story-wrapper{
+    display: flex;
+    gap: 5rem;
+}
+.our-story-img{
+    max-width: 450px;
+    outline: none;
+    overflow: hidden;
+    flex: 4;
+}
+.our-story-info{
+    flex: 3;
+}
+.our-story-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    outline: none;
+    opacity: 0.98;
+}
+.our-story-title{
+    font-size: 2.4rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 0px rgb(144, 170, 134);
+    text-align: center;
+}
+.our-story-sub-title{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px rgb(144, 170, 134);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.our-story-desc{
+    font-size: 1.45rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.14rem;
+}
+@media only screen and (max-width:780px){
+    .our-story-wrapper{
+        display: flex;
+        gap: 5rem;
+        flex-direction: column-reverse;
+    }
+    .our-story-img{
+        margin: 0 auto;
+    }
+    .our-story-img img{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:780px) and (max-width: 1024px){
+    .our-story-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+         
+    }
+    .our-story-img{
+        margin: 0 auto;
+    }
+}
+/* OUR STORY RELATED CSS ENDED */
+
+
+
+
+
+/* OUR GOALS RELATED CSS  */
+.our-goals-wrapper{
+    display: flex;
+    gap: 5rem;
+}
+.our-goals-info{
+    text-align: center;
+    margin-bottom: 5rem;
+    width: 60%;
+}
+.our-goals-img-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.our-goals-img-1{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 2rem
+}
+.our-goals-img-1 img {
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.our-goals-img-2 img{
+    height: 250px;
+    border-radius: 4px;
+    object-fit: cover;
+} 
+.our-goals-title{
+    font-size: 2.4rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 0px rgb(144, 170, 134);
+    text-align: center;
+}
+.our-goals-desc{
+    font-size: 1.45rem;
+    line-height: 2.4rem;
+    text-align: center;
+    letter-spacing: 0.14rem;
+}
+@media only screen and (max-width:780px){
+    .our-goals-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .our-goals-info{
+        text-align: center;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    .our-goals-img-1 img {
+        width: 50%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .our-goals-img-1{
+        gap: 2rem;
+    }
+}
+@media only screen and (min-width:780px) and (max-width:1024px){
+    .our-goals-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .our-goals-info{
+        text-align: center;
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    .our-goals-img-1 img {
+        width: 48%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+/* OUR GOALS RELATED CSS ENDED */

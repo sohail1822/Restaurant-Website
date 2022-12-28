@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=Cinzel+Decorative&family=Cormorant:wght@300&family=Courgette&family=Overpass:wght@100&family=Permanent+Marker&family=Satisfy&family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Caveat', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cormorant', serif;
+    font-family: 'Courgette', cursive;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Space Mono', monospace; */
+}
+
+:root {
+    --green-1: #266436;
+    --green-2: #a2de96;
+    --light-green-1: #d6e5d8;
+    --light-green-2: #f1faf0;
+    --black-1: #3b413a;
+    --black-2: #3f3c3c;
+    --black-3: #5b6359;
+    --white-1: #e8e8e8;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--light-green-2);
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 0;
+}
+
+@media only screen and (max-width: 780px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .logo {
+        /* text-align: center; */
+        padding-top: 2rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+p {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    line-height: 1em;
+    font-size: 1.8rem;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.nav-icon {
+    width: 50px;
+    height: 50px;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+/* SCROLL TOP BUTTON CSS*/
+.scroll-top {
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.scroll-top svg {
+    pointer-events: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:780px) {
+    .scroll-top {
+        right: 0px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width:780px) and (max-width:1024px) {
+    .scroll-top {
+        right: 0px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* SCROLL TOP BUTTON CSS ENDED*/
+
+
+
+
+
+
+
+
+
+
+/* ALL BUTTON RELATED CSS */
+.main-btn {
+    color: var(--green-1);
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 300;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 1.2rem 2rem;
+    margin-top: 20px;
+}
+
+.main-btn:hover {
+    color: black;
+    transition: 0.3s ease-in all;
+}
+
+.primary-btn {
+    color: whitesmoke;
+    background-color: rgb(55, 150, 55);
+}
+
+.book-btn {
+    color: var(--green-1);
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 1.2rem 2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.book-btn:hover {
+    background-color: rgb(167, 199, 241);
+    color: black;
+}
+
+.join-btn {
+    background-color: green;
+    width: 15%;
+    padding: 1rem 1.8rem;
+    border-radius: 10px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bolder;
+    border: 1px solid whitesmoke;
+}
+
+.join-btn:hover {
+    background-color: rgb(167, 199, 241);
+    color: black;
+    border: 1px solid black;
+}
+
+.send-btn {
+    background-color: var(--green-1);
+    color: black;
+    width: 25%;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.send-btn:hover {
+    background-color: rgb(167, 199, 241);
+    color: black;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width : 780px) {
+    .book-btn {
+        font-weight: 900;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .primary-btn {
+        margin: 0 20px;
+        border-radius: 10px;
+    }
+
+    .join-btn {
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+    }
+
+    .send-btn {
+        width: 40%;
+        margin-left: 100px;
+    }
+}
+
+/* ALL BUTTON RELATED CSS ENDED */
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION RELATED CSS */
+.nav {
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.nav-open,
+.nav-close {
+    display: none;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    margin-bottom: 10px;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 0.8rem;
+}
+
+.nav-list li a {
+    font-size: 1.8rem;
+    font-family: 'Cinzel Decorative', cursive;
+    color: black;
+    padding: 1.5rem;
+}
+
+.nav-list li a:hover {
+    color: rgb(184, 181, 39);
+    border-radius: 10px;
+    transition: 0.35s ease-in all;
+}
+
+.nav_icon {
+    display: none;
+}
+
+.nav_icon_2 {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+    .nav-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list {
+        text-align: center;
+    }
+
+    .nav-list li {
+        /* margin-top: 50px; */
+        display: inline-block;
+        margin: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .nav-list li a {
+        margin-bottom: 0px;
+        font-size: 1.6rem;
+    }
+
+    .nav_icon {
+        justify-content: flex-end;
+        display: flex;
+        top: -5rem;
+    }
+    .nav_icon svg{
+    margin-bottom: 3rem;
+    }
+
+    .nav_icon_2 {
+        margin-bottom: 50px;
+        display: block;
+        position: absolute;
+        color: black;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+    }
+
+    .nav_icon_2 svg {
+        margin-bottom: 70px;
+    }
+
+    .nav_icon svg,
+    .nav_icon_2 svg {
+        pointer-events: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-list {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        height: 65vh;
+        width: 80%;
+        background: var(--light-green-1);
+        display: flex;
+        align-items: centre;
+        justify-content: flex-end;
+        padding-right: 2rem;
+        transform: translate(0);
+        overflow: hidden;
+        transition: 1s ease-in-out transform;
+    }
+
+    .nav-list.show {
+        transform: translateX(-100%);
+    }
+
+    .nav-list li {
+        display: block;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 0rem;
+        padding-right: 5rem;
+    }
+
+    .nav-list li a {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .nav_bg_overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(18, 24, 14, 0.808);
+        display: none;
+    }
+
+    .nav_bg_overlay.active {
+        display: block;
+    }
+
+}
+
+/* NAVIGATION RELATED CSS ENDED */
+
+
+
+
+
+
+
+
+
+
+/* FOOTER RELATED CSS */
+ion-icon {
+    width: 35px;
+    height: 35px;
+    color: black;
+    font-weight: lighter;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-left: 70px;
+}
+
+footer {
+    background-color: var(--light-green-1);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: coral;
+    transition: 0.3s ease-in-out all;
+    font-weight: bolder;
+}
+
+footer h3:hover {
+    color: red;
+    transition: 0.3s ease-in-out all;
+}
+
+footer ion-icon:hover {
+    color: cornflowerblue;
+    transition: 0.3s ease-in-out all;
+}
+
+.footer-wrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-desc {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    margin-left: 20px;
+}
+
+.footer-social-title {
+    margin-left: 20px;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0px rgb(144, 170, 134);
+}
+
+.footer-social ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-social ul li a {
+    margin-left: 0px;
+    margin: 0 1.2rem;
+    padding: 0.4rem 0.5rem;
+}
+
+.footer-com {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 0 5rem;
+}
+
+.footer-com li {
+    list-style: none;
+    padding: 0.2rem;
+}
+
+.footer-com li a {
+    font-size: 1.8rem;
+    line-height: 0.5cm;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.footer-text-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: black;
+    text-shadow: 2px 2px 0px rgb(144, 170, 134);
+}
+
+.footer-text a {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: black;
+    line-height: 1.5rem;
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width : 780px) {
+    footer {
+        background-color: var(--light-green-1);
+        padding-top: 5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .footer-desc {
+        margin-left: 0px;
+    }
+
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0rem;
+    }
+
+    .footer-social-title {
+        margin-left: 0px;
+    }
+
+    .footer-logo img {
+        margin-left: 0px;
+    }
+
+    .footer-com {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width:1024px) {
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 4rem;
+    }
+}
+
+
+/* FOOTER RELATED CSS ENDED */
+
+
+
+
+
+
+
+
+
+
+/* STORE INFO RELATED CSS */
+.store-info-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.store-info-item {
+    background-color: var(--light-green-1);
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 160px;
+}
+
+.store-info-icon {
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.store-info-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.store-info-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Cinzel', serif;
+}
+
+@media only screen and (max-width:780px) {
+    .store-info-item {
+        width: 260px;
+    }
+
+    .store-info-wrapper {
+        gap: 1.5rem;
+    }
+}
+
+/* STORE INFO RELATED CSS ENDED */
